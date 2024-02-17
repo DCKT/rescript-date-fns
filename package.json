@@ -1,7 +1,7 @@
 {
-  "name": "@dck/rescript-<module>",
+  "name": "@dck/rescript-date-fns",
   "version": "0.0.0",
-  "description": "ReScript bindings for <module>",
+  "description": "ReScript bindings for date-fns",
   "keywords": [
     "rescript",
     "bindings"
@@ -13,7 +13,8 @@
     "url": "https://github.com/DCKT"
   },
   "peerDependencies": {
-    "rescript": ">=11.0.0"
+    "rescript": ">=11.0.0",
+    "date-fns": "~3.3.1"
   },
   "devDependencies": {
     "@rescript/core": "^1.0.0",

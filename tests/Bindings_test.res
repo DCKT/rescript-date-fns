@@ -1,12 +1,11 @@
-open RescriptCore
 open RescriptBun
-open RescriptBun.Globals
 open Test
 
-let wait = ms => {
-  Promise.make((resolve, _) => setTimeout(() => resolve(), ms)->ignore)
-}
+test("Sample", () => {
+  let now = Js.Date.make()
+  let yesterday = now->DateFns.subDays(1)
+  let isoDate = "2024-02-17T16:59:23.164Z"
 
-test("demo", () => {
-  expect(1)->Expect.toBe(1)
+  expect(yesterday->DateFns.isYesterday)->Expect.toBe(true)
+  expect(isoDate->DateFns.parseISO->DateFns.isValid)->Expect.toBe(true)
 })

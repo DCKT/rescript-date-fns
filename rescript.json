@@ -1,5 +1,5 @@
 {
-  "name": "@dck/rescript-<module>",
+  "name": "@dck/rescript-date-fns",
   "uncurried": true,
   "namespace": false,
   "sources": [
